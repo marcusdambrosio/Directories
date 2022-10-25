@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05d5d6065c94445880dbbcbe2910c331 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_05d5d6065c94445880dbbcbe2910c331" ></div>
+        
+</body>
+<script>    
+    
+            var map_05d5d6065c94445880dbbcbe2910c331 = L.map(
+                "map_05d5d6065c94445880dbbcbe2910c331",
+                {
+                    center: [39.5318626, -119.8265344],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 20,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6bc76efeb261476ba3df226ad9967bdb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_05d5d6065c94445880dbbcbe2910c331);
+        
+    
+            var tile_layer_3a7938044c5f4a25a269fb07f1ea6f69 = L.tileLayer(
+                "https://mt1.google.com/vt/lyrs=s\u0026x={x}\u0026y={y}\u0026z={z}",
+                {"attribution": "Google", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_05d5d6065c94445880dbbcbe2910c331);
+        
+    
+            var layer_control_cda14ad749b442c9b268c62eca5ba454 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6bc76efeb261476ba3df226ad9967bdb,
+                },
+                overlays :  {
+                    "Satellite View" : tile_layer_3a7938044c5f4a25a269fb07f1ea6f69,
+                },
+            };
+            L.control.layers(
+                layer_control_cda14ad749b442c9b268c62eca5ba454.base_layers,
+                layer_control_cda14ad749b442c9b268c62eca5ba454.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_05d5d6065c94445880dbbcbe2910c331);
+        
+    
+            var marker_dfb34687ec234314a75af5f9301027c8 = L.marker(
+                [36.2618508, -115.1544624],
+                {}
+            ).addTo(map_05d5d6065c94445880dbbcbe2910c331);
+        
+    
+            marker_dfb34687ec234314a75af5f9301027c8.bindTooltip(
+                `<div>
+                     NORTH LAS VEGAS<br>89031-3603<br>1 growers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6786c096a7954af298a073972fc84642 = L.marker(
+                [47.8609406, 3.3002511],
+                {}
+            ).addTo(map_05d5d6065c94445880dbbcbe2910c331);
+        
+    
+            marker_6786c096a7954af298a073972fc84642.bindTooltip(
+                `<div>
+                     Las Vegas<br>89110<br>1 growers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8df6169f627540cea83ecc2ae297bfae = L.marker(
+                [36.0438858, -115.1479986],
+                {}
+            ).addTo(map_05d5d6065c94445880dbbcbe2910c331);
+        
+    
+            marker_8df6169f627540cea83ecc2ae297bfae.bindTooltip(
+                `<div>
+                     Las Vegas<br>89123<br>1 growers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcebb090a57140ce81525c90cc8e001a = L.marker(
+                [48.4819358, 9.9840028],
+                {}
+            ).addTo(map_05d5d6065c94445880dbbcbe2910c331);
+        
+    
+            marker_dcebb090a57140ce81525c90cc8e001a.bindTooltip(
+                `<div>
+                     Las Vegas<br>89179<br>1 growers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_021b6ee39e9249d3a15876e277646d19 = L.marker(
+                [39.4649252, -118.7423601],
+                {}
+            ).addTo(map_05d5d6065c94445880dbbcbe2910c331);
+        
+    
+            marker_021b6ee39e9249d3a15876e277646d19.bindTooltip(
+                `<div>
+                     Fallon<br>89406<br>2 growers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c0daef12e19468880b6f1780857183a = L.marker(
+                [48.6738465, 10.3265359],
+                {}
+            ).addTo(map_05d5d6065c94445880dbbcbe2910c331);
+        
+    
+            marker_6c0daef12e19468880b6f1780857183a.bindTooltip(
+                `<div>
+                     Yerington<br>89447<br>1 growers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
